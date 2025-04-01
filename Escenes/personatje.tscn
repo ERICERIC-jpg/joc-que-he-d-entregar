@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://ypb4j4rkwykj"]
+
+[ext_resource type="Texture2D" uid="uid://buk2g5tgpx67l" path="res://Imatges/PNG/Square/chicken.png" id="1_ssn0m"]
+[ext_resource type="Texture2D" uid="uid://b28jj2ovgxhw1" path="res://Imatges/Tiles/caneRedSmall.png" id="2_l64a3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ssn0m"]
+size = Vector2(129.5, 127)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iw2af"]
+radius = 23.0
+height = 64.0
+
+[node name="Personatje" type="CharacterBody2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_ssn0m")
+
+[node name="CaneRedSmall" type="Sprite2D" parent="Icon"]
+position = Vector2(87, 40)
+texture = ExtResource("2_l64a3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_ssn0m")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, -45)
+shape = SubResource("CapsuleShape2D_iw2af")
+
+[node name="Camera2D" type="Camera2D" parent="."]

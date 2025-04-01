@@ -1,0 +1,130 @@
+[gd_scene load_steps=5 format=3 uid="uid://corq6ugivol66"]
+
+[ext_resource type="Texture2D" uid="uid://b8mq3ygs5gqjr" path="res://Imatges/Tiles/iceBlockHalfAlt.png" id="1_bvfl7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b46sv"]
+size = Vector2(1248, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bvfl7"]
+size = Vector2(71, 176)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjy2a"]
+size = Vector2(68, 172)
+
+[node name="chara" type="CharacterBody2D"]
+
+[node name="IceBlockHalfAlt" type="Sprite2D" parent="."]
+position = Vector2(68, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt2" type="Sprite2D" parent="."]
+position = Vector2(-67, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt3" type="Sprite2D" parent="."]
+position = Vector2(-138, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt4" type="Sprite2D" parent="."]
+position = Vector2(-208, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt5" type="Sprite2D" parent="."]
+position = Vector2(-278, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt6" type="Sprite2D" parent="."]
+position = Vector2(139, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt7" type="Sprite2D" parent="."]
+position = Vector2(-347, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt8" type="Sprite2D" parent="."]
+position = Vector2(208, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt9" type="Sprite2D" parent="."]
+position = Vector2(278, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt10" type="Sprite2D" parent="."]
+position = Vector2(343, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt11" type="Sprite2D" parent="."]
+position = Vector2(411, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt12" type="Sprite2D" parent="."]
+position = Vector2(481, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt13" type="Sprite2D" parent="."]
+position = Vector2(-418, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt14" type="Sprite2D" parent="."]
+position = Vector2(-488, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt15" type="Sprite2D" parent="."]
+position = Vector2(-559, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt16" type="Sprite2D" parent="."]
+position = Vector2(552, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt17" type="Sprite2D" parent="."]
+position = Vector2(618, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt18" type="Sprite2D" parent="."]
+position = Vector2(-559, -39)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt19" type="Sprite2D" parent="."]
+position = Vector2(-559, -77)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt20" type="Sprite2D" parent="."]
+position = Vector2(-559, -117)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt21" type="Sprite2D" parent="."]
+position = Vector2(-559, -155)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt26" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt22" type="Sprite2D" parent="."]
+position = Vector2(618, -37)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt23" type="Sprite2D" parent="."]
+position = Vector2(618, -75)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt24" type="Sprite2D" parent="."]
+position = Vector2(618, -110)
+texture = ExtResource("1_bvfl7")
+
+[node name="IceBlockHalfAlt25" type="Sprite2D" parent="."]
+position = Vector2(618, -145)
+texture = ExtResource("1_bvfl7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, -12)
+shape = SubResource("RectangleShape2D_b46sv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(617.5, -91)
+shape = SubResource("RectangleShape2D_bvfl7")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-558, -102)
+shape = SubResource("RectangleShape2D_rjy2a")

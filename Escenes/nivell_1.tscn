@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbsad1xqiee80"]
+
+[ext_resource type="PackedScene" uid="uid://corq6ugivol66" path="res://Escenes/terra.tscn" id="1_ik146"]
+[ext_resource type="PackedScene" uid="uid://ypb4j4rkwykj" path="res://Escenes/personatje.tscn" id="2_kawgh"]
+[ext_resource type="PackedScene" uid="uid://bhlcobqowa7eo" path="res://Escenes/boles_de_neu.tscn" id="3_ynxtp"]
+
+[node name="Nivell 1" type="Node2D"]
+
+[node name="Terra" parent="." instance=ExtResource("1_ik146")]
+position = Vector2(545, 596)
+
+[node name="Personatje" parent="." instance=ExtResource("2_kawgh")]
+position = Vector2(578, 523)
+scale = Vector2(0.5, 0.5)
+
+[node name="Boles de neu" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(200, 42)
+
+[node name="Boles de neu2" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(481, 47)
+
+[node name="Boles de neu3" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(925, 49)
+
+[node name="Boles de neu4" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(727, -13)
+
+[node name="Boles de neu5" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(319, -31)
+
+[node name="Boles de neu6" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(102, -41)
+
+[node name="Boles de neu7" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(1073, -36)
+
+[node name="Boles de neu8" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(469, -225)
+
+[node name="Boles de neu9" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(112, -368)
+
+[node name="Boles de neu10" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(802, -324)
+
+[node name="Boles de neu11" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(636, -367)
+
+[node name="Boles de neu12" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(275, -335)
+
+[node name="Boles de neu13" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(222, -171)
+
+[node name="Boles de neu14" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(481, -350)
+
+[node name="Boles de neu15" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(657, -232)
+
+[node name="Boles de neu16" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(848, -193)
+
+[node name="Boles de neu17" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(929, -290)
+
+[node name="Boles de neu18" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(78, -243)
+
+[node name="Boles de neu19" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(628, -543)
+
+[node name="Boles de neu20" parent="." instance=ExtResource("3_ynxtp")]
+position = Vector2(298, -452)

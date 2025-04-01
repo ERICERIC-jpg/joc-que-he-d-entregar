@@ -1,13 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhlcobqowa7eo"]
+[gd_scene load_steps=3 format=3 uid="uid://bhlcobqowa7eo"]
 
-[ext_resource type="Script" uid="uid://dpi663uv1an23" path="res://Escenes/boles_de_neu.gd" id="1_do567"]
 [ext_resource type="Texture2D" uid="uid://b6yxftm6flayw" path="res://Imatges/Tiles/snowBallBig.png" id="1_ksfvo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_do567"]
 radius = 36.2215
 
-[node name="Boles de neu" type="RigidBody2D"]
-script = ExtResource("1_do567")
+[node name="Boles de neu" type="Area2D"]
 
 [node name="SnowBallBig" type="Sprite2D" parent="."]
 texture = ExtResource("1_ksfvo")

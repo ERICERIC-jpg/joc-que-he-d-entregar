@@ -14,27 +14,29 @@ height = 64.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l64a3"]
 size = Vector2(78.5, 61)
 
-[node name="Personatje" type="CharacterBody2D"]
+[node name="Node2D" type="Node2D"]
+
+[node name="Personatje" type="CharacterBody2D" parent="."]
 script = ExtResource("1_l64a3")
 
-[node name="Icon" type="Sprite2D" parent="."]
+[node name="Icon" type="Sprite2D" parent="Personatje"]
 texture = ExtResource("1_ssn0m")
 
-[node name="CaneRedSmall" type="Sprite2D" parent="Icon"]
+[node name="CaneRedSmall" type="Sprite2D" parent="Personatje/Icon"]
 position = Vector2(87, 40)
 texture = ExtResource("2_l64a3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personatje"]
 position = Vector2(0, 10)
 shape = SubResource("RectangleShape2D_ssn0m")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Personatje"]
 position = Vector2(0, -45)
 shape = SubResource("CapsuleShape2D_iw2af")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="Personatje"]
 offset = Vector2(0, -110)
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Personatje"]
 position = Vector2(85.75, 44.5)
 shape = SubResource("RectangleShape2D_l64a3")

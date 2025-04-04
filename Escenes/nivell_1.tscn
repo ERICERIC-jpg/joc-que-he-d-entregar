@@ -13,11 +13,22 @@ position = Vector2(545, 596)
 position = Vector2(578, 523)
 scale = Vector2(0.5, 0.5)
 
+[node name="Label" type="Label" parent="Personatje"]
+offset_left = -496.0
+offset_top = -408.0
+offset_right = 531.0
+offset_bottom = -174.0
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 39
+text = "Intenta esquivar les boles durant la nevada"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Boles de neu" parent="." instance=ExtResource("3_ynxtp")]
 position = Vector2(200, 42)
 
 [node name="Boles de neu2" parent="." instance=ExtResource("3_ynxtp")]
-position = Vector2(481, 47)
+position = Vector2(481, 139)
 
 [node name="Boles de neu3" parent="." instance=ExtResource("3_ynxtp")]
 position = Vector2(925, 49)

@@ -1,9 +1,8 @@
 extends CharacterBody2D
 var velocitat = 550
-var direccio = 0
+var direccio := Vector2.ZERO
 func _physics_process(delta):
-	direccio = Input.get_vector("moureesquerra","mouredreta","moureamunt","moureavall")
-	print(direccio)
-	var desplaçament: Vector2 = direccio * velocitat
-	position = position + direccio * velocitat * delta
+	direccio.x = Input.get_axis("moureesquerra","mouredreta")
+	velocity  = direccio * velocitat
+	
 	move_and_slide()

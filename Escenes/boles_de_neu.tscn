@@ -8,9 +8,12 @@ radius = 36.2215
 
 [node name="Boles de neu" type="Area2D"]
 script = ExtResource("1_do567")
+next_escene_path = "res://Escees/node_2d.tscn"
 
 [node name="SnowBallBig" type="Sprite2D" parent="."]
 texture = ExtResource("1_ksfvo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_do567")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

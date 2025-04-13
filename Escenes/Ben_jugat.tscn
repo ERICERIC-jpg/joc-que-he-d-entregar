@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://x7yl6sv6xl5q"]
+
+[ext_resource type="FontFile" uid="uid://d0vqwhssk8icy" path="res://Imatges/winter_solstice_2/Winter Solstice Free.ttf" id="1_awdw4"]
+[ext_resource type="Script" uid="uid://cjqcmj3en1b3y" path="res://Scripts/ben_jugat.gd" id="1_p71n2"]
+[ext_resource type="Texture2D" uid="uid://bb2p2m4jlictj" path="res://Imatges/kenney_background-elements-redux/Backgrounds/backgroundForest.png" id="2_ksrw0"]
+[ext_resource type="Texture2D" uid="uid://buqoay32c5h58" path="res://PNG/Square (outline)/chicken.png" id="3_ksrw0"]
+
+[sub_resource type="Theme" id="Theme_p71n2"]
+default_font = ExtResource("1_awdw4")
+default_font_size = 34
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_p71n2")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 138.0
+offset_top = 91.0
+offset_right = 1032.0
+offset_bottom = 232.0
+theme = SubResource("Theme_p71n2")
+text = "T'has passat el joc! 
+Felicitats per superar la tempesta i agafar la bola daurada!
+Prem la gallina per tornar a començar una nova partida"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundForest" type="Sprite2D" parent="."]
+modulate = Color(1, 0.784314, 1, 1)
+light_mask = 513
+visibility_layer = 513
+z_index = -4
+position = Vector2(587, 467)
+scale = Vector2(1.15674, 0.994141)
+texture = ExtResource("2_ksrw0")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 493.0
+offset_top = 319.0
+offset_right = 637.0
+offset_bottom = 480.0
+icon = ExtResource("3_ksrw0")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

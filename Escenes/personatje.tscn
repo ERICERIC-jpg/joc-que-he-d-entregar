@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ypb4j4rkwykj"]
+[gd_scene load_steps=5 format=3 uid="uid://ypb4j4rkwykj"]
 
 [ext_resource type="Script" uid="uid://8qc1t6ioje7k" path="res://Scripts/personatje.gd" id="1_l64a3"]
 [ext_resource type="Texture2D" uid="uid://buk2g5tgpx67l" path="res://Imatges/PNG/Square/chicken.png" id="1_ssn0m"]
-[ext_resource type="Texture2D" uid="uid://b28jj2ovgxhw1" path="res://Imatges/Tiles/caneRedSmall.png" id="2_l64a3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ssn0m"]
 size = Vector2(129.5, 127)
@@ -11,32 +10,18 @@ size = Vector2(129.5, 127)
 radius = 23.0
 height = 64.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l64a3"]
-size = Vector2(78.5, 61)
-
 [node name="Node2D" type="Node2D"]
 
-[node name="Personatje" type="CharacterBody2D" parent="."]
+[node name="personatje" type="CharacterBody2D" parent="."]
 script = ExtResource("1_l64a3")
 
-[node name="Icon" type="Sprite2D" parent="Personatje"]
+[node name="Icon" type="Sprite2D" parent="personatje"]
 texture = ExtResource("1_ssn0m")
 
-[node name="CaneRedSmall" type="Sprite2D" parent="Personatje/Icon"]
-position = Vector2(87, 40)
-texture = ExtResource("2_l64a3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Personatje"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="personatje"]
 position = Vector2(0, 10)
 shape = SubResource("RectangleShape2D_ssn0m")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Personatje"]
-position = Vector2(0, -45)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="personatje"]
+position = Vector2(-1, -41)
 shape = SubResource("CapsuleShape2D_iw2af")
-
-[node name="Camera2D" type="Camera2D" parent="Personatje"]
-offset = Vector2(0, -110)
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Personatje"]
-position = Vector2(85.75, 44.5)
-shape = SubResource("RectangleShape2D_l64a3")

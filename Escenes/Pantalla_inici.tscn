@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwdb3ke1kuavw"]
+
+[ext_resource type="FontFile" uid="uid://d0vqwhssk8icy" path="res://Imatges/winter_solstice_2/Winter Solstice Free.ttf" id="1_oiyio"]
+[ext_resource type="Script" uid="uid://br1s2ne072q1n" path="res://Scripts/pantalla_inici.gd" id="1_xw5rq"]
+[ext_resource type="Texture2D" uid="uid://bb2p2m4jlictj" path="res://Imatges/kenney_background-elements-redux/Backgrounds/backgroundForest.png" id="2_pnw1o"]
+[ext_resource type="Texture2D" uid="uid://buqoay32c5h58" path="res://PNG/Square (outline)/chicken.png" id="4_pgyfh"]
+
+[sub_resource type="Theme" id="Theme_pnw1o"]
+default_font = ExtResource("1_oiyio")
+default_font_size = 45
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_xw5rq")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 51.0
+offset_top = -11.0
+offset_right = 1110.0
+offset_bottom = 303.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_pnw1o")
+text = "Intenta esquivar les boles de neu durant la tempesta! 
+Agafa la bola daurada per guanyar, 
+sinó et quedaràs en un bucle infinit
+Prem la gallina per començar l'aventura!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundForest" type="Sprite2D" parent="."]
+modulate = Color(1, 0.784314, 1, 1)
+light_mask = 513
+visibility_layer = 513
+z_index = -2
+position = Vector2(587, 413)
+scale = Vector2(1.20581, 1.00195)
+texture = ExtResource("2_pnw1o")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 485.0
+offset_top = 332.0
+offset_right = 629.0
+offset_bottom = 493.0
+icon = ExtResource("4_pgyfh")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
